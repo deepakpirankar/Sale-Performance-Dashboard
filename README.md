@@ -2,9 +2,9 @@
 An interactive Sales Performance Dashboard built using Pivot Tables, Slicers, Macros, and Checkboxes to monitor daily sales, compare executive performance, and analyze target achievements across regions. Easily filter data and gain actionable insights with dynamic controls.
 "Code for Macro - Checkbox"
 
-Sub SlicerConnection()
-'Dashboard1
-If Sheet1.Range("A1").Value = True Then
+    Sub SlicerConnection()
+    'Dashboard1
+    If Sheet1.Range("A1").Value = True Then
     ActiveWorkbook.SlicerCaches("Slicer_Region").PivotTables.AddPivotTable ( _
         ActiveSheet.PivotTables("PivotTable1"))
     Else
